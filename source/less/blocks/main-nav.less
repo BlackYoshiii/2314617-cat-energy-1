@@ -100,6 +100,20 @@
     border: none;
   }
 
+  .main-nav__item--active {
+    position: relative;
+  }
+
+  .main-nav__item--active::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    bottom: 15px;
+    height: 2px;
+    background-color: #68b738;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -109,6 +123,20 @@
   .main-nav__item {
     padding: 0;
     border: none;
+  }
+
+  .main-nav__item--active::after {
+    bottom: -7px;
+  }
+
+  .main-nav__item--bright::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    background-color: #ffffff;
   }
 
   .main-nav__link--bright {

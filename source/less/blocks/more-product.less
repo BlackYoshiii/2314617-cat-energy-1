@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.more-product__wrapper {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ebebeb;
+}
+
 .more-product__title {
   font-family: @fontsOswald;
   font-size: 16px;
@@ -40,13 +45,19 @@
 @media (min-width: @tablet-width) {
   .more-product {
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
+    align-self: end;
+    min-height: 445px;
     padding: 40px 37px 40px;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     background-image: none;
-    min-height: 395px;
-    align-self: end;
+  }
+
+  .more-product__wrapper {
+    padding: 0;
+    border: none;
   }
 
   .more-product__title {
@@ -73,10 +84,11 @@
 
 @media (min-width: @desktop-width) {
   .more-product {
+    padding: 60px 37px 40px;
     min-height: 423px;
   }
 
   .more-product__button {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
