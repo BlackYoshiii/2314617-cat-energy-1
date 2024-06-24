@@ -8,12 +8,42 @@
   list-style-type: none;
 }
 
+.additionally-form__label {
+  display: flex;
+  align-items: center;
+}
+
 .additionally-form__title {
   padding: 0;
 }
 
-.additionally-form__checkbox {
-  margin: 0;
+.additionally-form__custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  vertical-align: sub;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    background-image: url("../img/tick.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+  }
+}
+
+.additionally-form__checkbox:checked + .additionally-form__custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +54,16 @@
     row-gap: 32px;
     width: 550px;
     margin-top: 57px;
+  }
+
+  .additionally-form__custom-checkbox {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 24px;
+      height: 19px;
+    }
   }
 }
 
