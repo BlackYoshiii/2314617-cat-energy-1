@@ -120,17 +120,23 @@
                   <span class="example__cost">Затраты на питание: <span class="example__sum">15 000 руб.</span></span>
                 </div>
                 <div class="example__slider">
-                  <ul class="example__slider-list">
-                    <li class="example__slider-item example__slider-item--before">
-                      <img class="example__slider-image" src="img/cat-fat.png" width="280" height="256" alt="Толстый кот">
-                    </li>
-                    <li class="example__slider-item example__slider-item--after">
-                      <img class="example__slider-image" src="img/cat-thin.png" width="280" height="256" alt="Худой кот">
-                    </li>
-                  </ul>
+                  <div class="example__slider-item">
+                    <div class="example__slider-range example__slider-range--before">
+                      <picture>
+                        <img class="example__slider-image example__slider-image--before" src="img/cat-fat.png" width="280" height="256" alt="Толстый кот">
+                      </picture>
+                    </div>
+                    <div class="example__slider-range example__slider-range--after">
+                      <picture>
+                        <img class="example__slider-image example__slider-image--after" src="img/cat-thin.png" width="280" height="256" alt="Худой кот">
+                      </picture>
+                    </div>
+                  </div>
                   <div class="example__slider-swipe">
-                    <div class="example__slider-toggle">
-                      <span class="visually-hidden">Переместить</span>
+                    <div class="example__slider-bar">
+                      <button class="example__slider-toggle example__slider-toggle--left example__slider-toggle--right" type="button">
+                        <span class="visually-hidden">Переместить</span>
+                      </button>
                     </div>
                   </div>
                 </div>
