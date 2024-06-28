@@ -123,12 +123,14 @@
                   <div class="example__slider-item">
                     <div class="example__slider-range example__slider-range--before">
                       <picture>
-                        <img class="example__slider-image example__slider-image--before" src="img/cat-fat.png" width="280" height="256" alt="Толстый кот">
+                        <source media="(min-width: 768px)" width="560" height="512" srcset="img/cat-fat-increased.png 1x, img/cat-fat-increased@2x.png 2x">
+                        <img class="example__slider-image example__slider-image--before" width="280" height="256" src="img/cat-fat.png" srcset="img/cat-fat@2x.png" alt="Толстый кот">
                       </picture>
                     </div>
                     <div class="example__slider-range example__slider-range--after">
                       <picture>
-                        <img class="example__slider-image example__slider-image--after" src="img/cat-thin.png" width="280" height="256" alt="Худой кот">
+                        <source media="(min-width: 768px)" width="560" height="512" srcset="img/cat-thin-increased.png 1x, img/cat-thin-increased@2x.png 2x">
+                        <img class="example__slider-image example__slider-image--after" width="280" height="256" src="img/cat-thin.png" srcset="img/cat-thin@2x.png" alt="Худой кот">
                       </picture>
                     </div>
                   </div>
