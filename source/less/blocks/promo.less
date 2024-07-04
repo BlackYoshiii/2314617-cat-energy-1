@@ -2,7 +2,6 @@
   background-image: linear-gradient(rgba(rgba(104, 183, 56, 0.85)) 63%, #ffffff 35%), url("../img/promo-cat.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(rgba(104, 183, 56, 0.85)) 63%, #ffffff 35%), url("../img/promo-cat@2x.jpg");
@@ -92,10 +91,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    background-size: contain;
+  }
+
   .promo__wrapper {
     display: flex;
     flex-direction: row;
-    min-height: 633px;
+    min-height: 576px;
+    margin-bottom: 82px;
   }
 
   .promo__text-wrapper {
@@ -103,7 +107,7 @@
   }
 
   .promo__title {
-    padding-top: 110px;
+    padding-top: 106px;
     margin-left: 0;
   }
 

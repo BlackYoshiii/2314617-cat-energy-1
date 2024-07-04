@@ -16,12 +16,14 @@
 .address__location-map {
   display: block;
   width: 100%;
+  border: 0;
 }
 
 .address__info {
   display: flex;
   align-items: center;
   padding: 27px 0 27px;
+  gap: 16px;
 }
 
 .address__info--light {
@@ -56,6 +58,15 @@
     width: 157px;
     text-align: right;
   }
+
+  .address__location-map {
+    min-height: 400px;
+  }
+
+  .address__location-city {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -69,6 +80,7 @@
     top: 95px;
     left: 110px;
     margin: 0;
+    padding: 60px 80px;
     background-color: #ffffff;
   }
 
