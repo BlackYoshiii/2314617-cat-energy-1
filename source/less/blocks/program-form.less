@@ -5,8 +5,8 @@
 .program-form__list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
-  padding: 22px 0 20px;
+  gap: 12px;
+  padding: 21px 0 20px;
   margin: 0;
   list-style-type: none;
   border-top: 1px solid #ebebeb;
@@ -49,8 +49,8 @@
 
 @media (min-width: @tablet-width) {
   .program-form {
-    margin-top: 72px;
-    padding: 30px 28px;
+    margin-top: 67px;
+    padding: 24px 28px;
     border: 1px solid #eaeaea;
   }
 
@@ -62,6 +62,7 @@
   .program-form__custom-radio {
     width: 40px;
     height: 40px;
+    margin-right: 17px;
 
     &::before {
       width: 18px;
@@ -72,12 +73,16 @@
 
 @media (min-width: @desktop-width) {
   .program-form {
-    width: 100%;
-    margin-top: 66px;
-    padding: 25px 28px;
+    min-width: 570px;
+    margin-top: 67px;
+    padding: 25px 26px;
+  }
+
+  .program-form__custom-radio {
+    margin-right: 20px;
   }
 
   .program-form__list {
-    gap: 10px;
+    gap: 12px;
   }
 }
